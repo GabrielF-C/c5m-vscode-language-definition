@@ -1,0 +1,137 @@
+{
+  "name": "c5m-vscode-language-definition",
+  "displayName": "c5m-vscode-language-definition",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "c5m",
+        "aliases": [
+          "Conquest of Elysium 5 Modding",
+          "c5m"
+        ],
+        "extensions": [
+          ".c5m",
+          ".c5m-part"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "c5m",
+        "scopeName": "source.c5m",
+        "path": "./syntaxes/c5m.tmLanguage.json"
+      }
+    ],
+    "configurationDefaults": {
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": [
+              "source.c5m keyword.addstring.operator"
+            ],
+            "settings": {
+              "foreground": "#ffffff"
+            }
+          },
+          {
+            "scope": [
+              "source.c5m keyword.addstring.operator.quantity"
+            ],
+            "settings": {
+              "foreground": "#B5CEA8"
+            }
+          },
+          {
+            "scope": [
+              "source.c5m keyword.addstring.identifier"
+            ],
+            "settings": {
+              "foreground": "#d65656"
+            }
+          },
+          {
+            "scope": [
+              "source.c5m keyword.headers"
+            ],
+            "settings": {
+              "foreground": "#00ffff"
+            }
+          },
+          {
+            "scope": [
+              "source.c5m keyword.event.triggers"
+            ],
+            "settings": {
+              "foreground": "#ff5b5b"
+            }
+          },
+          {
+            "scope": [
+              "source.c5m keyword.naming"
+            ],
+            "settings": {
+              "foreground": "#8080c0"
+            }
+          },
+          {
+            "scope": [
+              "source.c5m keyword.operation"
+            ],
+            "settings": {
+              "foreground": "#ff80c0"
+            }
+          },
+          {
+            "scope": [
+              "source.c5m keyword.sprites"
+            ],
+            "settings": {
+              "foreground": "#ffbfff"
+            }
+          },
+          {
+            "scope": [
+              "source.c5m keyword.copy"
+            ],
+            "settings": {
+              "foreground": "#00ff80"
+            }
+          },
+          {
+            "scope": [
+              "source.c5m keyword.block.start"
+            ],
+            "settings": {
+              "foreground": "#0080ff"
+            }
+          },
+          {
+            "scope": [
+              "source.c5m keyword.block.end"
+            ],
+            "settings": {
+              "foreground": "#0080ff"
+            }
+          },
+          {
+            "scope": [
+              "source.c5m keyword.general"
+            ],
+            "settings": {
+              "foreground": "#e0bd74"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
