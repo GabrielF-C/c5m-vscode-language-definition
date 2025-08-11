@@ -21,7 +21,11 @@
           ".c5m",
           ".c5m-part"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "dark": "illwinter.png",
+          "light": "illwinter.png"
+        }
       }
     ],
     "grammars": [
